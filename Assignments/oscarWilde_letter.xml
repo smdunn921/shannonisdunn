@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-model href="dunn_08-30_xml-02.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="dunn_09-09_relaxNG-01.rnc" type="application/relax-ng-compact-syntax"?>
 <letter to="Lord Alfred Douglas" from="Oscar Wilde">
-    <date>
-        <month>March</month>
-        <year>1893</year>
-    </date>
+    <info> <date when="1893-03"> March 1893</date>
     <location type="hotel" where="London">Savoy Hotel</location>
+    </info>
 
     <body>
         <heading> Dearest of All Boys,</heading> Your letter was <adjective type="positive"
