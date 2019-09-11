@@ -1,0 +1,26 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = letter 
+letter = element letter {to, from, info, body, closing}
+
+to=attribute to {"Lord Alfred Douglas"}
+from = attribute from {"Oscar Wilde"}
+
+info= element info {location, date}
+location = element location {where, text}
+where = attribute where {"Rouen"}
+
+date = element date {when, text}
+when = attribute when {xsd:date | xsd:gYearMonth | xsd:gYear}
+
+body = element body {mixed {(heading | adjective | location | time)*}}
+heading = element heading {text}
+adjective = element adjective {type, text}
+type = attribute type {"positive" | "negative" | "neutral"}
+time = element time {unit, n, text}
+unit = attribute unit {"minutes"}
+n = attribute n {text}
+
+closing = element closing {valediction, text}
+valediction = element valediction {text}
+
