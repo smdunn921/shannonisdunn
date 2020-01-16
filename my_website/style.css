@@ -1,0 +1,32 @@
+body {
+    background-color: #FFE6FC;
+    color: #0C0C0C;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 17px
+}
+h1 {
+    color: #555555;
+    text-align:center
+}
+h2 {
+    color:silver;
+    text-align:center;
+}
+img {float: right;
+max-width: 65%;
+}
+
+div#bottom {position: fixed;     
+       text-align: center;    
+       bottom: 5px; 
+       width: 100%;
+       }
+ul#references li{
+    display: inline;
+    padding: 10px;
+    font-size: 18px;
+}
+a {color: #B1CEFF;
+    
+}
+
