@@ -1,5 +1,5 @@
 body {
-    background-color: #e6ccff;
+    background-color: #8c8c8c;
     color: #0C0C0C;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 17px
@@ -13,26 +13,45 @@ h2 {
     text-align:center;
 }
 img {float: right;
-max-width: 65%;
+max-width: 80%;
+padding-left: 20px;
+padding-top: 30px;
+
 }
-#header{
+.header{
+    display: flex;
+    justify-content: space-around;
     position: fixed;
+    left: 0;
+    top: 5px;
     text-align: center;
-    background-color: #cccccc;
+    background-color: #000000;
     width: 100%;
+    align-items: center;
+    padding: 8px 8px 8px 8px;
+    border: 3px solid white;
+    font-size: 23px;
+    font-family: courier
 }
-#bottom {position: fixed;     
-       text-align: center;    
-       bottom: 2px; 
-       width: 100%;
-       font-size: 14px;
+.bottom {
+    position: fixed;
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    left: 25%;
+    bottom: 0;
        }
 ul#references li{
     display: inline;
     padding: 10px;
     font-size: 18px;
 }
-a {color: #B1CEFF;
-    
-}
+a:link {color: #80c1ff;   
+}/* unvisited link */
+a:visited {color:#bf80ff
+;}  /* visited link */
+a:hover {color:#ff80ff
+;}  /* mouse over link */
 
