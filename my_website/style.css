@@ -43,6 +43,13 @@ padding-top: 30px;
     left: 25%;
     bottom: 0;
        }
+.aboutShan {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 20px;
+}
 ul#references li{
     display: inline;
     padding: 10px;
