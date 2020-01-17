@@ -19,9 +19,11 @@ max-width: 65%;
     position: fixed;
     text-align: center;
     background-color: #cccccc;
+    width: 100%;
 }
 #bottom {position: fixed;     
-       text-align: center;
+       text-align: center;    
+       bottom: 2px; 
        width: 100%;
        font-size: 14px;
        }
