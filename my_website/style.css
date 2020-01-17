@@ -1,5 +1,5 @@
 body {
-    background-color: #b3b3cc;
+    background-color: #e6ccff;
     color: #0C0C0C;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 17px
@@ -15,11 +15,15 @@ h2 {
 img {float: right;
 max-width: 65%;
 }
-
-div#bottom {position: fixed;     
-       text-align: center;    
-       bottom: 5px; 
+#header{
+    position: fixed;
+    text-align: center;
+    background-color: #cccccc;
+}
+#bottom {position: fixed;     
+       text-align: center;
        width: 100%;
+       font-size: 14px;
        }
 ul#references li{
     display: inline;
