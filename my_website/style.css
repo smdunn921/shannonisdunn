@@ -1,3 +1,7 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
 body {
     background-color: #666666;
     color: #ffffff;
@@ -24,9 +28,9 @@ padding-top: 30px;
     top: 0;
     text-align: center;
     background-color: #000000;
-    width: 100%;
+    width: 100vw;
     align-items: center;
-    padding: 8px 8px 8px 8px;
+    padding: 8px;
     border: 3px solid #80c1ff;
     font-size: 23px;
     font-family: courier
