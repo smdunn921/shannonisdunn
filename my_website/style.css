@@ -45,19 +45,45 @@ h2 {
     left: 25%;
     bottom: 5px;
        }
-.about {
-    float: left;
-    justify-content: space-around;
+.aboutContain{
     display: flex;
-    flex-direction: column;
-    margin-top: 2%;
-    padding: 3%;
+    flex-direction: row;
+    max-width: 100%;
+    margin-top: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+    justify-content: space-around;
+    color: white;
+}        
+.about {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-top: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+    justify-content: space-around;
 }
 .about img{
 position: relative;
 float: right;
 justify-content: space-around;
 max-width: 80%;
+}
+.content{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+.textContain{
+    max-width:100%;
+    flex:1;
+    justify-content: space-around;
+    flex-direction: column;
+    padding:30px;
+    font-size:18px;
+    margin:30px;
+    margin-top:30px;
 }
 #teenTitans{
     font-size: 15px;
