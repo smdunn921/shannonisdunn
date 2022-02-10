@@ -6,7 +6,7 @@ body {
     background-color: #666666;
     color: #ffffff;
     font-family: Verdana;
-    font-size: 17px
+    font-size: 16px
 }
 h1 {
     color: #0C0C0C;
@@ -15,6 +15,11 @@ h1 {
 h2 {
     color:silver;
     text-align:center;
+}
+p {
+    color: white;
+    font-size: 16px;
+    font-family: Verdana;
 }
 
 .navbar{
@@ -127,9 +132,7 @@ max-width: 80%;
     margin:30px;
     margin-top:30px;
 }
-#teenTitans{
-    font-size: 15px;
-}
+
 ul#references li{
     display: inline;
     padding: 10px;
@@ -137,8 +140,8 @@ ul#references li{
 }
 a:link {color: #80c1ff;   
 }/* unvisited link */
-a:visited {color:#bf80ff
-;}  /* visited link */
-a:hover {color:#ff80ff
-;}  /* mouse over link */
+a:visited {color: #80c1ff;   
+} /*  visited link */ 
+a:hover {color:#ff80ff;
+}  /* mouse over link */
 
