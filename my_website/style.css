@@ -14,7 +14,7 @@ h1 {
     text-align:center
 }
 h2 {
-    color:silver;
+    color:#c8b4c7;
     text-align:center;
 }
 p {
@@ -22,8 +22,21 @@ p {
     font-size: 16px;
     font-family: Verdana;
 }
-
-
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.header img{
+   width: 100%;
+   }
+.content{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
 
 
 /* navbar stuff */
@@ -48,24 +61,25 @@ p {
 
 navWrap {
     width:100%;
+    justify-content: space-around;
 }
 .navbar {
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
     background-color: black;
     color: #80c1ff;
-    min-width: 160px;
 }
 .navbar li {
     margin:0px;
     list-style:none;
+    justify-content: space-around;
 }
 .navbar ul{
     margin: 0px;
     padding: 0px;
+    justify-content: space-around;
 }
 .navbar a {
     text-decoration:none;
@@ -92,9 +106,10 @@ navWrap {
     display:inline-block;
     position:relative;
     font-size:17px;
+    justify-content: space-around;
 }
 .navbar > ul > li > a {
-    padding:20px 30px 20px 30px;
+    padding:15px 20px 15px 20px;
     display:inline-block;
 }
 .navbar > ul > li:hover > a, .navbar > ul > .current-item > a {
@@ -147,8 +162,17 @@ navWrap {
 .cfix:after {
     display:block;
     clear:both;
+    justify-content: space-around;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
+.sticky + .content {
+  padding-top: 60px;
+}
 
 
 /*  dropdown not needed? 
@@ -194,14 +218,14 @@ color: #ff80ff;
 } */
 
 .bottom {
-    position: fixed;
+    position: relative;
     display: flex;
     width: 50%;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     left: 25%;
-    bottom: 0px;
+    bottom: 5px;
        }
 .aboutContain{
     display: flex;
@@ -220,6 +244,17 @@ color: #ff80ff;
     padding-left: 5%;
     padding-right: 5%;
     margin: 3%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+    justify-content: space-around;
+}
+.poemAbout {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 10%;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 20px;
     justify-content: space-around;
