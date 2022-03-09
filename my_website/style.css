@@ -32,15 +32,11 @@ p {
 .header img{
    width: 100%;
    }
-.content{
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: center;
-}
+
 
 
 /* navbar stuff */
-/*  .navbar{
+/*  #navbar{
     display: flex;
     width: 100%;
     overflow: hidden;
@@ -50,7 +46,7 @@ p {
     background-color: black;
     color: #80c1ff;
 }
-.navbar a{
+#navbar a{
     float: left;
     font-size: 18px;
     text-align: center;
@@ -63,7 +59,7 @@ navWrap {
     width:100%;
     justify-content: space-around;
 }
-.navbar {
+#navbar {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -71,52 +67,51 @@ navWrap {
     background-color: black;
     color: #80c1ff;
 }
-.navbar li {
+#navbar li {
     margin:0px;
     list-style:none;
     justify-content: space-around;
 }
-.navbar ul{
+#navbar ul{
     margin: 0px;
     padding: 0px;
     justify-content: space-around;
 }
-.navbar a {
+#navbar a {
     text-decoration:none;
-    float: left;
     font-size: 18px;
     text-align: center;
     color: #80c1ff;
 }
-.navbar li a{
+#navbar li a{
     display:block;
     color: #80c1ff;;
 }
-.navbar li:hover > a, .navbar .current-item > a {
+#navbar li:hover > a, #navbar .current-item > a {
     text-decoration:none;
     background-color: grey;
     color: #ff80ff;
 }
-.navbar .arrow {
+#navbar .arrow {
     font-size:11px;
     line-height:0%;
 }
-.navbar > ul > li {
+#navbar > ul > li {
     float:left;
     display:inline-block;
     position:relative;
     font-size:17px;
     justify-content: space-around;
 }
-.navbar > ul > li > a {
-    padding:15px 20px 15px 20px;
+#navbar > ul > li > a {
+    padding:16px 21px 16px 21px;
     display:inline-block;
 }
-.navbar > ul > li:hover > a, .navbar > ul > .current-item > a {
+#navbar > ul > li:hover > a, #navbar > ul > .current-item > a {
     background-color: grey;
     color: #ff80ff;
 }
-.navbar li:hover .sub {
+#navbar li:hover .sub {
     z-index:1;
     opacity:1;
     visibility: visible;
@@ -190,7 +185,7 @@ navWrap {
     margin: 0;
     padding: 14px 16px;
 }
-.navbar a:hover, .dropdown:hover .dropbtn{
+#navbar a:hover, .dropdown:hover .dropbtn{
 background-color: grey;
 color: #ff80ff;
 }
@@ -249,16 +244,27 @@ color: #ff80ff;
     justify-content: space-around;
 }
 .poemAbout {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin: 10%;
+    width: 100%;
+    margin-top: 20px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 20px;
-    justify-content: space-around;
+    display: flex;
+    text-align: center;
 }
+.video {
+    max-width:100%;
+    flex:1;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top:30px;
+    white-space: pre;
+    line-height: 75%;
+    font-size: 20px;
+    text-align: center;
+    text-indent: 110px;
+    
+}
+
 .about img{
 position: relative;
 float: right;
@@ -269,7 +275,14 @@ max-width: 80%;
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
-    max-width: 100%;
+    margin-top: 3%;
+}
+.content img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 .textContain{
     max-width:100%;
@@ -281,7 +294,22 @@ max-width: 80%;
     margin:30px;
     margin-top:30px;
 }
+#words{
+    max-width:100%;
+    flex:1;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size:18px;
+}
 
+#yt{
+    max-width:100%;
+    flex:1;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size:18px;
+    
+}
 ul#references li{
     display: inline;
     padding: 10px;
