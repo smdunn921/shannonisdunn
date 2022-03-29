@@ -265,6 +265,12 @@ color: #ff80ff;
     text-indent: 110px;
     
 }
+.textRight{
+    text-align: right;
+}
+.textLeft{
+    text-align: left;
+}
 
 .about img{
 position: relative;
