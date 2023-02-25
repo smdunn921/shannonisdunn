@@ -1,0 +1,291 @@
+/* main elements and bodies */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #6d6d79;
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 16px;
+}
+h1 {
+    color: #0C0C0C;
+    text-align:center
+}
+h2 {
+    color:#c8b4c7;
+    text-align:center;
+}
+p {
+    color: white;
+    font-size: 18px;
+    font-family: Verdana;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.header img{
+   width: 100%;
+   }
+ul#references li{
+    display: inline;
+    padding: 10px;
+    font-size: 18px;
+}
+.textRight{
+    text-align: right;
+}
+.textLeft{
+    text-align: left;
+}
+
+.about img{
+    position: relative;
+    float: right;
+    justify-content: space-around;
+    max-width: 80%;
+}
+
+.content{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    margin-top: 3%;
+}
+.content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.textContain{
+    max-width:100%;
+    flex:1;
+    flex-direction: column;
+    padding:15px;
+    font-size:18px;
+    margin:15px;
+    margin-top:10px;
+    line-height: 150%;
+}
+.textContain img{
+    width: 70%;
+    height: auto;
+}
+.bottom {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    left: 25%;
+}
+.aboutContain{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-top: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+    justify-content: space-around;
+    color: white;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 3%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+/*end main elements */
+
+
+/*link styles*/
+a:link {color: #9ebf90;
+    text-decoration: none;
+}/* unvisited link */
+
+a:visited {color: #9ebf90;
+    text-decoration: none;
+} /*  visited link */
+
+a:hover {color:#deaebc;
+    text-decoration: none;
+}  /* mouse over link */
+
+/*end link styles*/
+
+
+/*navbar stuff */
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 100%;
+    background-color: black;
+    color: #9ebf90;
+}
+#navbar a {
+    text-decoration:none;
+    font-size: 22px;
+    text-align: center;
+    color: #9ebf90;
+}
+
+#navbar a:hover {color:#deaebc;
+}
+
+#navbar li:hover > a, #navbar .current-item > a, #navbar li:hover > li:hover > a {
+    text-decoration:none;
+    background-color: grey;
+    color: #deaebc;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
+.nested-dropdowns {
+    /* Border */
+    font-size: 22px;
+    outline: none;
+    color: inherit;
+    text-align: center;
+    background-color: inherit;
+    font-family: inherit;
+    border: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    /* Reset list styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nested-dropdowns li {
+    cursor: auto;
+    background-color: inherit;
+    color:inherit;
+
+    /* Spacing */
+    padding: 16px 16px;
+
+    /* Used to position the sub nested-dropdowns */
+    position: relative;
+    min-width: 160px;
+}
+
+/* The sub nested-dropdowns */
+.nested-dropdowns ul {
+    /* Border */
+    border: none;
+    color: inherit;
+    background-color: inherit;
+
+    /* Hidden by default */
+    display: none;
+
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 100%;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* The second level sub nested-dropdowns */
+.nested-dropdowns ul ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Change background color of list item when being hovered */
+.nested-dropdowns li:hover {
+    background-color:grey;
+    color:#deaebc;
+}
+
+/* Show the direct sub nested-dropdowns when hovering the list item */
+.nested-dropdowns li:hover > ul {
+    display: block;
+    background:black;
+}
+/*end navbar*/
+
+/*general pages*/
+
+.poemAbout {
+    width: 100%;
+    margin-top: 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    line-height: 150%;
+}
+.video {
+    max-width:100%;
+    flex:1;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top:30px;
+    white-space: pre;
+    line-height: 75%;
+    font-size: 20px;
+    text-align: center;
+    text-indent: 110px;
+}
+#words{
+    max-width:100%;
+    flex:1;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size:18px;
+    margin-right: 5%;
+}
+#yt{
+    max-width:100%;
+    flex:1;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size:18px;
+}
+iframe {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2%;
+    border: 0 none;
+    box-sizing: border-box;
+}
+/* end stuff for poem project */
+
